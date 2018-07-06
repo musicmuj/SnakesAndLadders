@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakesAndLadders", "SnakesAndLadders\SnakesAndLadders.csproj", "{4C664775-D2D2-452B-8158-A09241FEB2A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakesAndLaddersTest", "SnakesAndLaddersTest\SnakesAndLaddersTest.csproj", "{BDA7D775-AAF0-4803-B670-0A117DC06CAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{4C664775-D2D2-452B-8158-A09241FEB2A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C664775-D2D2-452B-8158-A09241FEB2A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C664775-D2D2-452B-8158-A09241FEB2A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDA7D775-AAF0-4803-B670-0A117DC06CAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDA7D775-AAF0-4803-B670-0A117DC06CAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDA7D775-AAF0-4803-B670-0A117DC06CAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDA7D775-AAF0-4803-B670-0A117DC06CAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
