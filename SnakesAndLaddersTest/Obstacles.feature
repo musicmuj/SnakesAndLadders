@@ -1,11 +1,11 @@
 ﻿Feature: Obstacles
 	In order to avoid silly mistakes
-	As a math idiot
-	I want to be told the sum of two numbers
+	As a game player
+	I want to know which square I would be there if I encountered obstacles.
 
-@mytag
-Scenario: Add two numbers
-	Given I have entered 50 into the calculator
-	And I have entered 70 into the calculator
-	When I press add
-	Then the result should be 120 on the screen
+@obstacles_encountered
+Scenario: Give the player the current square and how many steps will move on.
+	Given Player current square is 0
+	And he/she is going to move 2 steps
+	When he/she moved
+	Then he/she should encounter obstacle and he/she would be square 38
