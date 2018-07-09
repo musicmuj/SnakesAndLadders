@@ -63,7 +63,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Obstacles.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Obstacles.feature.cs</LastGenOutput>

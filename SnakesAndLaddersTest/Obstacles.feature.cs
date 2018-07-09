@@ -104,6 +104,374 @@ this.ScenarioSetup(scenarioInfo);
 #line hidden
             this.ScenarioCleanup();
         }
+        
+        public virtual void SnakesGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn_(string currentSquare, string steps, string resultSquare, string[] exampleTags)
+        {
+            string[] @__tags = new string[] {
+                    "obstacles_encountered_snakes"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("[Snakes] Give the player the current square and how many steps will move on.", @__tags);
+#line 14
+this.ScenarioSetup(scenarioInfo);
+#line 15
+ testRunner.Given(string.Format("Player current square is {0}", currentSquare), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 16
+ testRunner.And(string.Format("he/she is going to move {0} steps", steps), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 17
+ testRunner.When("he/she moved", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 18
+ testRunner.Then(string.Format("he/she should encounter obstacle and he/she would be square {0}", resultSquare), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("[Snakes] Give the player the current square and how many steps will move on.: 92")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Obstacles")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("obstacles_encountered_snakes")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "92")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:currentSquare", "92")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:steps", "7")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:resultSquare", "80")]
+        public virtual void SnakesGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn__92()
+        {
+#line 14
+this.SnakesGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn_("92", "7", "80", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("[Snakes] Give the player the current square and how many steps will move on.: 80")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Obstacles")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("obstacles_encountered_snakes")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "80")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:currentSquare", "80")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:steps", "15")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:resultSquare", "75")]
+        public virtual void SnakesGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn__80()
+        {
+#line 14
+this.SnakesGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn_("80", "15", "75", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("[Snakes] Give the player the current square and how many steps will move on.: 75")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Obstacles")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("obstacles_encountered_snakes")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "75")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:currentSquare", "75")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:steps", "17")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:resultSquare", "88")]
+        public virtual void SnakesGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn__75()
+        {
+#line 14
+this.SnakesGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn_("75", "17", "88", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("[Snakes] Give the player the current square and how many steps will move on.: 88")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Obstacles")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("obstacles_encountered_snakes")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "88")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:currentSquare", "88")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:steps", "1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:resultSquare", "68")]
+        public virtual void SnakesGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn__88()
+        {
+#line 14
+this.SnakesGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn_("88", "1", "68", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("[Snakes] Give the player the current square and how many steps will move on.: 68")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Obstacles")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("obstacles_encountered_snakes")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "68")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:currentSquare", "68")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:steps", "6")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:resultSquare", "53")]
+        public virtual void SnakesGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn__68()
+        {
+#line 14
+this.SnakesGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn_("68", "6", "53", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("[Snakes] Give the player the current square and how many steps will move on.: 53")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Obstacles")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("obstacles_encountered_snakes")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "53")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:currentSquare", "53")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:steps", "11")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:resultSquare", "60")]
+        public virtual void SnakesGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn__53()
+        {
+#line 14
+this.SnakesGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn_("53", "11", "60", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("[Snakes] Give the player the current square and how many steps will move on.: 60")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Obstacles")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("obstacles_encountered_snakes")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "60")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:currentSquare", "60")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:steps", "2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:resultSquare", "19")]
+        public virtual void SnakesGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn__60()
+        {
+#line 14
+this.SnakesGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn_("60", "2", "19", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("[Snakes] Give the player the current square and how many steps will move on.: 19")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Obstacles")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("obstacles_encountered_snakes")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "19")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:currentSquare", "19")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:steps", "30")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:resultSquare", "11")]
+        public virtual void SnakesGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn__19()
+        {
+#line 14
+this.SnakesGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn_("19", "30", "11", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("[Snakes] Give the player the current square and how many steps will move on.: 11")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Obstacles")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("obstacles_encountered_snakes")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "11")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:currentSquare", "11")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:steps", "35")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:resultSquare", "25")]
+        public virtual void SnakesGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn__11()
+        {
+#line 14
+this.SnakesGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn_("11", "35", "25", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("[Snakes] Give the player the current square and how many steps will move on.: 10")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Obstacles")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("obstacles_encountered_snakes")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "10")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:currentSquare", "10")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:steps", "6")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:resultSquare", "6")]
+        public virtual void SnakesGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn__10()
+        {
+#line 14
+this.SnakesGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn_("10", "6", "6", ((string[])(null)));
+#line hidden
+        }
+        
+        public virtual void LaddersGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn_(string currentSquare, string steps, string resultSquare, string[] exampleTags)
+        {
+            string[] @__tags = new string[] {
+                    "obstacles_encountered_ladders"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("[Ladders] Give the player the current square and how many steps will move on.", @__tags);
+#line 33
+this.ScenarioSetup(scenarioInfo);
+#line 34
+ testRunner.Given(string.Format("Player current square is {0}", currentSquare), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 35
+ testRunner.And(string.Format("he/she is going to move {0} steps", steps), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 36
+ testRunner.When("he/she moved", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 37
+ testRunner.Then(string.Format("he/she should encounter obstacle and he/she would be square {0}", resultSquare), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("[Ladders] Give the player the current square and how many steps will move on.: 0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Obstacles")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("obstacles_encountered_ladders")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:currentSquare", "0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:steps", "2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:resultSquare", "38")]
+        public virtual void LaddersGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn__0()
+        {
+#line 33
+this.LaddersGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn_("0", "2", "38", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("[Ladders] Give the player the current square and how many steps will move on.: 2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Obstacles")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("obstacles_encountered_ladders")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:currentSquare", "2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:steps", "5")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:resultSquare", "14")]
+        public virtual void LaddersGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn__2()
+        {
+#line 33
+this.LaddersGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn_("2", "5", "14", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("[Ladders] Give the player the current square and how many steps will move on.: 5")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Obstacles")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("obstacles_encountered_ladders")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "5")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:currentSquare", "5")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:steps", "3")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:resultSquare", "31")]
+        public virtual void LaddersGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn__5()
+        {
+#line 33
+this.LaddersGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn_("5", "3", "31", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("[Ladders] Give the player the current square and how many steps will move on.: 8")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Obstacles")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("obstacles_encountered_ladders")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "8")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:currentSquare", "8")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:steps", "7")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:resultSquare", "26")]
+        public virtual void LaddersGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn__8()
+        {
+#line 33
+this.LaddersGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn_("8", "7", "26", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("[Ladders] Give the player the current square and how many steps will move on.: 15" +
+            "")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Obstacles")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("obstacles_encountered_ladders")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "15")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:currentSquare", "15")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:steps", "6")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:resultSquare", "42")]
+        public virtual void LaddersGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn__15()
+        {
+#line 33
+this.LaddersGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn_("15", "6", "42", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("[Ladders] Give the player the current square and how many steps will move on.: 21" +
+            "")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Obstacles")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("obstacles_encountered_ladders")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "21")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:currentSquare", "21")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:steps", "7")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:resultSquare", "84")]
+        public virtual void LaddersGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn__21()
+        {
+#line 33
+this.LaddersGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn_("21", "7", "84", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("[Ladders] Give the player the current square and how many steps will move on.: 28" +
+            "")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Obstacles")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("obstacles_encountered_ladders")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "28")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:currentSquare", "28")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:steps", "8")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:resultSquare", "44")]
+        public virtual void LaddersGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn__28()
+        {
+#line 33
+this.LaddersGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn_("28", "8", "44", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("[Ladders] Give the player the current square and how many steps will move on.: 36" +
+            "")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Obstacles")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("obstacles_encountered_ladders")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "36")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:currentSquare", "36")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:steps", "15")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:resultSquare", "67")]
+        public virtual void LaddersGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn__36()
+        {
+#line 33
+this.LaddersGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn_("36", "15", "67", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("[Ladders] Give the player the current square and how many steps will move on.: 51" +
+            "")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Obstacles")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("obstacles_encountered_ladders")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "51")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:currentSquare", "51")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:steps", "20")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:resultSquare", "91")]
+        public virtual void LaddersGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn__51()
+        {
+#line 33
+this.LaddersGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn_("51", "20", "91", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("[Ladders] Give the player the current square and how many steps will move on.: 71" +
+            "")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Obstacles")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("obstacles_encountered_ladders")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "71")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:currentSquare", "71")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:steps", "7")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:resultSquare", "98")]
+        public virtual void LaddersGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn__71()
+        {
+#line 33
+this.LaddersGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn_("71", "7", "98", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("[Ladders] Give the player the current square and how many steps will move on.: 78" +
+            "")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Obstacles")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("obstacles_encountered_ladders")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "78")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:currentSquare", "78")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:steps", "9")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:resultSquare", "94")]
+        public virtual void LaddersGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn__78()
+        {
+#line 33
+this.LaddersGiveThePlayerTheCurrentSquareAndHowManyStepsWillMoveOn_("78", "9", "94", ((string[])(null)));
+#line hidden
+        }
     }
 }
 #pragma warning restore
