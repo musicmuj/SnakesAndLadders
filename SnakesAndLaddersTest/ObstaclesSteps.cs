@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SnakesAndLadders;
+using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TechTalk.SpecFlow;
 
 namespace SnakesAndLaddersTest
@@ -6,34 +8,43 @@ namespace SnakesAndLaddersTest
     [Binding]
     public class ObstaclesSteps
     {
+        private Obstacles _obstacles;
+
         [BeforeScenario()]
         private void Initialize()
         {
-
+            _obstacles = ObstaclesFactory.GetObstacles();
         }
 
         [Given(@"Player current square is (.*)")]
-        public void GivenPlayerCurrentSquareIs(int p0)
+        public void GivenPlayerCurrentSquareIs(int square)
         {
-            ScenarioContext.Current.Pending();
+            ScenarioContext.Current.Set<int>(square, "PlayerSquare");
         }
         
         [Given(@"he/she is going to move (.*) steps")]
-        public void GivenHeSheIsGoingToMoveSteps(int p0)
+        public void GivenHeSheIsGoingToMoveSteps(int steps)
         {
-            ScenarioContext.Current.Pending();
+            ScenarioContext.Current.Set<int>(steps, "Steps");
         }
         
         [When(@"he/she moved")]
         public void WhenHeSheMoved()
         {
-            ScenarioContext.Current.Pending();
+            var playerSquare = ScenarioContext.Current.Get<int>("PlayerSquare");
+            var steps = ScenarioContext.Current.Get<int>("Steps");
+
+            var squareAfterMoved = playerSquare + steps;
+
+            _obstacles.EncounterObstacle(squareAfterMoved);
         }
         
         [Then(@"he/she should encounter obstacle and he/she would be square (.*)")]
-        public void ThenHeSheShouldEncounterObstacleAndHeSheWouldBeSquare(int p0)
+        public void ThenHeSheShouldEncounterObstacleAndHeSheWouldBeSquare(int expected)
         {
-            ScenarioContext.Current.Pending();
+            var actual = _obstacles.GetResultSquare();
+
+            Assert.AreEqual(expected, actual);
         }
     }
 }

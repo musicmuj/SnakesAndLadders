@@ -54,11 +54,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Obstacles.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Obstacles.feature</DependentUpon>
+    </Compile>
+    <Compile Include="ObstaclesSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Obstacles.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Obstacles.feature.cs</LastGenOutput>
+    </None>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SnakesAndLadders\SnakesAndLadders.csproj">
+      <Project>{4c664775-d2d2-452b-8158-a09241feb2a8}</Project>
+      <Name>SnakesAndLadders</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
