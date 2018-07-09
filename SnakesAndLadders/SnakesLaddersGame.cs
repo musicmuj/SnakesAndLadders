@@ -16,12 +16,14 @@ namespace SnakesAndLadders
 
         private int _nextPlayer;
         private int _gameStep;
+        private bool _isGameOver;
 
         public SnakesLaddersGame(Dictionary<int, Player> players)
         {
             _players = players;
             _playerCount = players.Count;
             _gameStep = 0;
+            _isGameOver = false;
         }
 
         public void Play(int point1, int point2)
@@ -32,6 +34,9 @@ namespace SnakesAndLadders
             var distance = player.Square + totalSteps;
 
             player.Square = MoveOn(distance);
+
+            if (player.Square == 100)
+                _isGameOver = true;
 
             if (point1 != point2)
                 _gameStep += 1;
@@ -58,5 +63,7 @@ namespace SnakesAndLadders
             var resultSqaure = obstacles.GetResultSquare();
             return resultSqaure;
         }
+
+        public bool CheckIsGameOver() => _isGameOver;
     }
 }
