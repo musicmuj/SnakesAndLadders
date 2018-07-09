@@ -24,10 +24,13 @@ namespace SnakesAndLadders
             _playerCount = players.Count;
             _gameStep = 0;
             _isGameOver = false;
+
+            Console.WriteLine("[ Game Started ]");
         }
 
         public void Play(int point1, int point2)
         {
+            Console.WriteLine($"--- Dice point [{point1}, {point2}]");
             var player = _players[_nextPlayer];
 
             var totalSteps = point1 + point2;
@@ -37,6 +40,10 @@ namespace SnakesAndLadders
 
             if (player.Square == 100)
                 _isGameOver = true;
+
+            Console.WriteLine(_isGameOver
+                ? $"[Game Over] Winner is {player.Name}"
+                : $"--- Player {player.Name} moved from {distance - totalSteps} to square {player.Square}");
 
             if (point1 != point2)
                 _gameStep += 1;
