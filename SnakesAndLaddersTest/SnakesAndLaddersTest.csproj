@@ -61,12 +61,6 @@
     </Compile>
     <Compile Include="ObstaclesSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SnakesLaddersGame.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SnakesLaddersGame.feature</DependentUpon>
-    </Compile>
-    <Compile Include="SnakesLaddersGameSteps.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
@@ -77,10 +71,6 @@
       <LastGenOutput>Obstacles.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
-    <None Include="SnakesLaddersGame.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>SnakesLaddersGame.feature.cs</LastGenOutput>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SnakesAndLadders\SnakesAndLadders.csproj">
