@@ -48,8 +48,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dice.cs" />
     <Compile Include="Obstacles.cs" />
     <Compile Include="ObstaclesFactory.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
