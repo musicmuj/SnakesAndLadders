@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace SnakesAndLadders
@@ -46,6 +48,10 @@ namespace SnakesAndLadders
 
         private int MoveOn(int distance)
         {
+            // When distance over 100, should "bounce" off the last square and move back.
+            if (distance > 100)
+                distance = 100 - (distance - 100);
+
             var obstacles = ObstaclesFactory.GetObstacles();
             obstacles.EncounterObstacle(distance);
 
